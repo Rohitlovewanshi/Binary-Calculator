@@ -1,8 +1,9 @@
 from Tkinter import *
 from tkMessageBox import *
+import time
 root=Tk()
 root.resizable(width=False,height=False)
-root.geometry('1000x600')
+root.geometry('1100x700')
 a=PhotoImage(file='image.gif')
 Label(root,image=a).place(x=0,y=0)
 Label(root,text='BINARY CONVERSION CALCULATOR',font='times 20 bold',height=2,relief='sunken',bg='#F08080').place(x=260,y=40)
@@ -69,7 +70,7 @@ def cal():
     def insert1(x):
         e1.insert(16,x)     
     
-    Label(root1,text='Binary Calculator',font='algerian 20 bold',bg='#ADD8E6').grid(row=0,column=0,columnspan=4)
+    Label(root1,text='Binary Calculator',font='algerian 25 bold',bg='#ADD8E6').grid(row=0,column=0,columnspan=4)
     Label(root1,text='1.Number:',font='times 17',bg='#ADD8E6',width=15,height=3,anchor=W).grid(row=1,column=0,columnspan=2)
     Label(root1,text='2.Number:',font='times 17',bg='#ADD8E6',width=15,height=3,anchor=W).grid(row=2,column=0,columnspan=2)
     Label(root1,text='Result:',font='times 17',bg='#ADD8E6',width=15,height=3,anchor=W).grid(row=3,column=0,columnspan=2)
@@ -96,10 +97,10 @@ def con():
     root2.configure(background='#ADD8E6')
     Label(root2,text='Binary Conversion',font='algerian 20 bold',bg='#ADD8E6').grid(row=0,column=0,columnspan=4)
     Label(root2,text='Enter Number:',bg='#ADD8E6',height=1,width=10,font='times 14').grid(row=1,column=0,pady=20,padx=10)
-    e4=Entry(root2,font='arial 15 bold',width=40,bd=5)
+    e4=Entry(root2,font='arial 20 bold',width=40,bd=5)
     e4.grid(row=1,column=1,columnspan=3)
     Label(root2,text='Result:',bg='#ADD8E6',height=1,width=10,font='times 14').grid(row=2,column=0,pady=20,padx=10)
-    e5=Entry(root2,font='arial 15 bold',width=40,bd=5)
+    e5=Entry(root2,font='arial 20 bold',width=40,bd=5)
     e5.grid(row=2,column=1,columnspan=3)
     v1=IntVar()
     v2=IntVar()
